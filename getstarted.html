@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #3746b5; 
+            color: #242079;
+        }
+
+        h1 {
+            text-align: center;
+            color: #02021a; 
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #816ade;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7962df;
+        }
+
+        a {
+            color: #0d1b4c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Started</h1>
+
+    <form action="register.php" method="POST">
+        <input type="text" name="name" required placeholder="Name">
+        <input type="email" name="email" required placeholder="Email">
+        <input type="password" name="password" required placeholder="Password">
+        <input type="submit" value="Register">
+      </form>
+      
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+</body>
+</html>
+
